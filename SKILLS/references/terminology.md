@@ -41,6 +41,7 @@
 | 核心概念 | subgraph | 子图表、子图 |
 | 核心概念 | runtime | 运行时间、运行时 |
 | 核心概念 | checkpoint | 检验点、断点、检查点 |
+| 核心概念 | checkpointer | 检查点保存器、检查点器、检查点机 |
 | 核心概念 | persistence | 持续性、持久性、持久化 |
 | 核心概念 | thread | 主题、线索、线程 |
 | 核心概念 | interrupt | 打断、中断 |
@@ -64,8 +65,6 @@
 | 核心概念 | tool | 工具 |
 | 核心概念 | tool call | 工具调用 |
 | 核心概念 | model | 模型 |
-| 核心概念 | checkpoint | 检查点 |
-| 核心概念 | checkpointer | 检查点保存器 |
 | 代码标识符 | thread_id | — |
 | 代码标识符 | StateGraph | — |
 | 代码标识符 | MessagesState | — |
@@ -101,6 +100,11 @@
 | 惯用保留 | prompt / prompts | 提示、提示语 |
 | 惯用保留 | workflow | 工作流 |
 | 惯用保留 | async | 异步 |
+| 惯用保留 | embedding | 嵌入、词嵌入、向量嵌入 |
+| 惯用保留 | backend | 后端、后台 |
+| 惯用保留 | provider | 提供商、提供者 |
+| 惯用保留 | semantic search | 语义搜索、语义检索 |
+| 惯用保留 | semantic ranking | 语义排序、语义排名 |
 
 ## 需要翻译的术语表
 
@@ -117,7 +121,6 @@
 
 | 源词 | 译词 | 禁用译法 | 说明 |
 |---|---|---|---|
-| checkpointer | 检查点保存器 | 检查点器、检查点机 | 首次出现标注 Checkpointer |
 | durable execution | 持久化执行 | 耐用执行、耐久执行 | 持久化执行 |
 | resume | 恢复 | 继续、重启 | 中断后的恢复执行 |
 | pause | 暂停 | — | 暂停执行 |

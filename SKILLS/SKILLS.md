@@ -86,9 +86,9 @@ LangGraph 是构建有状态、multi-agent 应用（stateful, multi-agent applic
 | 类名 / 函数名 / 方法名 | 保留原文 | `StateGraph`、`add_node`、`invoke` |
 | 参数名 / 属性名 | 保留原文 | `state_schema`、`recursion_limit` |
 | 框架 / 库 / 产品名 | 保留原文 | `LangGraph`、`LangChain`、`LangSmith` |
-| 可译概念 | 按术语表翻译 | `orchestration` → 编排、`checkpointer` → 检查点保存器 |
+| 可译概念 | 按术语表翻译 | `orchestration` → 编排、`durable execution` → 持久化执行 |
 | 强绑 API 概念 | 保留英文 | `graph`、`node`、`edge`、`state` |
-| 首次出现的概念 | 可"译词（原文）"并注 | 检查点保存器（Checkpointer） |
+| 首次出现的概念 | 可"译词（原文）"并注 | 持久化执行（durable execution） |
 
 ### 文档格式：保持原样
 
@@ -157,8 +157,19 @@ LangGraph 是构建有状态、multi-agent 应用（stateful, multi-agent applic
 1. **定类型与自由度**：API 参考 / 概念指南走低自由度，教程 / How-to 走中自由度。
 2. **对术语表**：先查 [references/terminology.md](references/terminology.md)；表里没有的词先登记待定，不现场拍板。
 3. **译**：按类型套译法；代码块原样保留；长句先断句再组句。
-4. **自查**：跑一致性检查 + 代码/格式对齐 + 陷阱表 + 三维评分。
+4. **自查**：跑一致性检查 + 代码/格式对齐 + 陷阱表 + 三维评分。结构一致性跑 `SKILLS/scripts/verify_structure.ps1`（对比链接、标题、提示块、表格等，见下），报错必须先修再交付。
 5. **回验**：脱离原文只读译文一遍——读不顺的地方，八成有错；再拿译文对照源码点一遍关键标识符。
+
+结构校验脚本（固定使用，不要临时另写）：
+
+```powershell
+# 配对模式: <name>.md 与 <name>.zh.md 同目录
+SKILLS/scripts/verify_structure.ps1 -Name 9_stores -Dir tmp
+# 或显式指定两份文件
+SKILLS/scripts/verify_structure.ps1 -Source tmp\9_stores.md -Target tmp\9_stores.zh.md
+```
+
+校验项：标题层级、链接 URL、图片 src、代码块语言标签、admonition 类型、组件开标签、表格行/列数（错误级，exit 1）；行内代码数量（警告级）。
 
 ## 十、红线与边界
 
@@ -174,8 +185,10 @@ LangGraph 是构建有状态、multi-agent 应用（stateful, multi-agent applic
 2. **待定词清单**：源词 / 出现位置 / 为什么待定 / 决定后的译词
 3. **一致性检查单**：高频名词清单 / 译法是否唯一 / 指代是否清晰 / 混排空格
 4. **代码对齐清单**：代码块 diff / 内联代码保留 / 命令原样
-5. **三维评分卡**：忠实度 / 通顺度 / 术语一致性，各 0–4 分 + 主要问题
-6. **交付说明**：源文档版本 / 翻译日期 / 待确认项 / 审校状态
+5. **结构校验**：`scripts/verify_structure.ps1`，翻译完成后必跑
+5. **结构校验**：`scripts/verify_structure.ps1`，翻译完成后必跑
+6. **三维评分卡**：忠实度 / 通顺度 / 术语一致性，各 0–4 分 + 主要问题
+7. **交付说明**：源文档版本 / 翻译日期 / 待确认项 / 审校状态
 
 ## 十二、FAQ
 
