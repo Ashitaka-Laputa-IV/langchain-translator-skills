@@ -84,16 +84,12 @@
 | 产品名 | LangGraph Server | — |
 | 产品名 | trace (n.) | 追踪记录、轨迹 |
 | 惯用保留 | framework | 架构、框架 |
-| 惯用保留 | low-level | 低级、底层 |
 | 惯用保留 | prebuilt | 预建、预先构建、预构建 |
 | 惯用保留 | evaluation | 评价、评估 |
 | 惯用保留 | streaming | 流式传输、串流、流式 |
 | 惯用保留 | stream | 流 |
 | 惯用保留 | namespace | 名字空间、命名空间 |
 | 惯用保留 | pull request | 拉取请求 |
-| 惯用保留 | swarm | 蜂群、群集 |
-| 惯用保留 | map-reduce | 映射归约 |
-| 惯用保留 | DAG | 有向无环图 |
 | 惯用保留 | token | 令牌、词元 |
 | 惯用保留 | LLM | 大语言模型 |
 | 惯用保留 | prompt / prompts | 提示、提示语 |
@@ -102,8 +98,6 @@
 | 惯用保留 | embedding | 嵌入、词嵌入、向量嵌入 |
 | 惯用保留 | backend | 后端、后台 |
 | 惯用保留 | provider | 提供商、提供者 |
-| 惯用保留 | semantic search | 语义搜索、语义检索 |
-| 惯用保留 | semantic ranking | 语义排序、语义排名 |
 
 ## 需要翻译的术语表
 
@@ -155,6 +149,11 @@
 | retry | 重试 | — | 重试 |
 | timeout | 超时 | — | 超时 |
 | fallback | 回退 | 备用 | 回退 |
+| low-level | 底层 | 低级 | 如 low-level API → 底层 API |
+| map-reduce | 映射归约 | — | map-reduce 模式 |
+| DAG | 有向无环图 | — | 首次出现可注 DAG |
+| semantic search | 语义搜索 | 语义检索 | 语义搜索 |
+| semantic ranking | 语义排序 | 语义排名 | 语义排序 |
 
 ## 一致性约定
 
