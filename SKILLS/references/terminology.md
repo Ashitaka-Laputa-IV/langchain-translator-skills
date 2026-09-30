@@ -87,7 +87,6 @@
 | 惯用保留 | low-level | 低级、底层 |
 | 惯用保留 | prebuilt | 预建、预先构建、预构建 |
 | 惯用保留 | evaluation | 评价、评估 |
-| 惯用保留 | deployment | 布署、部署 |
 | 惯用保留 | streaming | 流式传输、串流、流式 |
 | 惯用保留 | stream | 流 |
 | 惯用保留 | namespace | 名字空间、命名空间 |
