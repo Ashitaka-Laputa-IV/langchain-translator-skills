@@ -1,6 +1,5 @@
 ---
 name: langgraph-translator
-version: 0.0.1
 description: 面向 LangGraph 官方文档的英译中技能, 翻译 LangGraph 概念指南、教程、How-to、API 参考等文档时使用.
 ---
 
