@@ -1,4 +1,3 @@
-```markdown
 ---
 name: langgraph-translator
 version: 0.0.1
@@ -217,4 +216,3 @@ A：先判断是否属于"类名 / API / 参数名 / 产品名"——是则保�
 3. 查 [references/terminology.md](references/terminology.md)；没有的词登记待定，不现场拍板。
 4. 交付前四查：代码对齐、术语一致、指代清晰、三维评分。
 5. 脱离原文通读一遍译文，再对照源码点一遍关键标识符。
-```
